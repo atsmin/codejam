@@ -70,7 +70,7 @@ public class CoinJam {
 	
 	private Long isPrime(long check) {
 		long divisor = 0;
-		for (long i = 2; i <= check; i++) {
+		for (long i = 2; i < check; i++) {
 			if (i * i > check)  break;
 			
 			if (check % i == 0) {
