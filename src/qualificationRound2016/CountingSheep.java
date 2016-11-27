@@ -8,7 +8,7 @@ import java.io.*;
 public class CountingSheep {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
-		int t = in.nextInt();  // Scanner has functions to read ints, longs, strings, chars, etc.
+		final int t = in.nextInt();  // Scanner has functions to read ints, longs, strings, chars, etc.
 
 		Set<String> asleep = IntStream.rangeClosed(0, 9).mapToObj(i -> Integer.valueOf(i).toString()).collect(Collectors.toSet());
 		// loop for each test case
